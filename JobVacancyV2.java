@@ -59,8 +59,11 @@ public class JobVacancyV2{
             spv2 = (JenisKelamin.equalsIgnoreCase("Pria") || JenisKelamin.equalsIgnoreCase("Wanita")) && umur >= 25 && umur <= 35 && lulusan.equalsIgnoreCase("D3") && pengalaman >= 4;
             if (spv1 || spv2){
                 hasil = ("Selamat Anda memenuhi Persyaratan Sebagai " + posisi + " dan Berhak Untuk ke Tahap Berikutnya");
-            } else hasil = ("Mohon Maaf, Anda Belum Memenuhi Syarat Sebagai " + posisi + " dan Anda Belum Berhak Untuk ke Tahap Berikutnya");
-         } else
+            }else {  hasil = ("Mohon Maaf, Anda Belum Memenuhi Syarat Sebagai " + posisi + " dan Anda Belum Berhak Untuk ke Tahap Berikutnya");
+            }
+         }else { hasil = ("Mohon Maaf Posisi Yang Anda Cari Saat Ini Tidak Ada");
+
+         }
 
 
 // Untuk or di sini kita liat ceknya harus perhatikan if dan elsenya
